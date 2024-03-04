@@ -1,7 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* GENERAL */
+
+html {
+  font-family: "Work Sans", sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* MAIN */
+
+body {
+  background-color: #f9f0ff;
+  color: #2f1533;
+}
+
+.container {
+  position: relative;
+}
+
+.background {
+  z-index: -1;
+  width: 100vw;
+}
+
+/* ACCORDION */
+
+.accordion {
+  z-index: 1;
+  background-color: #fff;
+  margin: 0 31.25rem;
+  padding: 3.125rem;
+  position: absolute;
+  top: 50%;
+  border-radius: 1.25rem;
+}
+
+.FAQ-styles {
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.section-title {
+  font-size: 1.25rem;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-btn {
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  background-color: #fff;
+}
+
+.section-btn:hover {
+  cursor: pointer;
+}
+
+.section-text {
+  color: #8c6991;
+}
+
+.line {
+  background-color: #f9f0ff;
+  height: 0.063rem;
+
+  margin-top: 30px;
+}
+
+/* FOOTER */
+
 .attribution {
-  font-size: 11px;
+  font-size: 0.688rem;
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: #3e52a3;
 }
