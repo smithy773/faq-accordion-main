@@ -1,0 +1,118 @@
+@media (max-width: 107em) {
+  .accordion {
+    margin: 0 26.75rem;
+  }
+}
+
+@media (max-width: 98em) {
+  .accordion {
+    margin: 0 26rem;
+    padding: 2.5rem 2.75rem;
+  }
+
+  .section-heading {
+    gap: 1.75rem;
+  }
+
+  .section-title {
+    font-size: 1.125rem;
+  }
+
+  .section-text {
+    font-size: 1rem;
+    margin-top: 0.875rem;
+  }
+
+  .line {
+    margin: 1.25rem 0;
+  }
+}
+
+@media (max-width: 87em) {
+  .accordion {
+    margin: 0 24rem;
+    padding: 2.125rem 2.25rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .section-heading {
+    gap: 1rem;
+  }
+
+  .section-title {
+    font-size: 1rem;
+  }
+
+  .plus,
+  .minus {
+    height: 1.875rem;
+    width: 1.875rem;
+  }
+
+  .section-text {
+    font-size: 0.875rem;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 78.5em) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .accordion {
+    margin: 0 20rem;
+    padding: 1.875rem 2rem;
+  }
+}
+
+@media (max-width: 70em) {
+  .accordion {
+    margin: 0 16rem;
+  }
+}
+
+@media (max-width: 62em) {
+  .accordion {
+    margin: 0 12rem;
+  }
+}
+
+@media (max-width: 51.25em) {
+  .background-desktop {
+    width: 175vw;
+  }
+
+  .accordion {
+    margin: 0 8rem;
+  }
+}
+
+@media (max-width: 40.5em) {
+  .accordion {
+    margin: 0 4rem;
+  }
+}
+
+@media (max-width: 34em) {
+  .background-desktop {
+    width: 225vw;
+  }
+
+  .accordion {
+    margin: 0 1.75rem;
+  }
+}
+
+@media (max-width: 23.438em) {
+  .background-desktop {
+    display: none;
+  }
+
+  .background-mobile {
+    display: block;
+  }
+}

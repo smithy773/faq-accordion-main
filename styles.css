@@ -9,7 +9,12 @@ html {
   font-family: "Work Sans", sans-serif;
 }
 
-.hidden {
+.open .section-text,
+.open .minus {
+  display: block;
+}
+
+.open .plus {
   display: none;
 }
 
@@ -19,7 +24,6 @@ html {
 
 .flex-column {
   flex-direction: column;
-  gap: 30px;
 }
 
 /* MAIN */
@@ -33,9 +37,13 @@ body {
   position: relative;
 }
 
-.background {
+.background-desktop {
   z-index: -1;
   width: 100vw;
+}
+
+.background-mobile {
+  display: none;
 }
 
 /* ACCORDION */
@@ -43,16 +51,39 @@ body {
 .accordion {
   z-index: 1;
   background-color: #fff;
-  margin: 0 31.25rem;
+  /* margin: 0 31.25rem; */
+  margin: 0 28.89vw;
   padding: 3.125rem;
   position: absolute;
   top: 50%;
+  right: 0%;
+  left: 0%;
   border-radius: 1.25rem;
+}
+
+.accordion-section {
+  justify-self: center;
+}
+
+.plus,
+.minus {
+  height: 2rem;
+  width: 2rem;
+}
+
+.minus {
+  display: none;
 }
 
 .FAQ-styles {
   align-items: center;
   margin-bottom: 2.5rem;
+  gap: 1.25rem;
+}
+
+.FAQ-icon {
+  height: 2.5rem;
+  width: 2.5rem;
 }
 
 h1 {
@@ -61,11 +92,13 @@ h1 {
 }
 
 .section-title {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
+  font-weight: 700;
 }
 
 .section-heading {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -81,14 +114,20 @@ h1 {
 }
 
 .section-text {
+  font-size: 1.125rem;
+  font-weight: 400;
   color: #8c6991;
+  margin-top: 1.25rem;
+  display: none;
+  max-width: 45rem;
+  line-height: 1.4;
 }
 
 .line {
   background-color: #f9f0ff;
   height: 0.063rem;
 
-  margin-top: 30px;
+  margin: 1.875rem 0;
 }
 
 /* FOOTER */
@@ -99,4 +138,9 @@ h1 {
 }
 .attribution a {
   color: #3e52a3;
+}
+
+footer {
+  position: absolute;
+  bottom: 0%;
 }
